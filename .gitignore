@@ -1,0 +1,12 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/aws_dbt_snowflake_project/profiles.yml

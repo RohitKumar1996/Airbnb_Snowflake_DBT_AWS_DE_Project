@@ -1,0 +1,69 @@
+[0m11:45:17.170865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b6da60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fd4c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fd4890>]}
+
+
+============================== 11:45:17.191557 | b05af430-8bba-4dad-978f-9026f03ea955 ==============================
+[0m11:45:17.191557 [info ] [MainThread]: Running with dbt=1.11.8
+[0m11:45:17.191898 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/rk8896/.dbt', 'write_json': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'cache_selected_only': 'False', 'log_format': 'default', 'quiet': 'False', 'invocation_command': 'dbt init', 'debug': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'no_print': 'None', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'introspect': 'True'}
+[0m11:46:05.266926 [error] [MainThread]: Encountered an error:
+
+[0m11:46:05.282787 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/dbt/cli/main.py", line 488, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/dbt/task/init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/dbt/task/init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/click/termui.py", line 179, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/click/termui.py", line 162, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:46:05.347554 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 48.223114, "process_in_blocks": "0", "process_kernel_time": 0.506281, "process_mem_max_rss": "145997824", "process_out_blocks": "0", "process_user_time": 1.736484}
+[0m11:46:05.348638 [debug] [MainThread]: Command `dbt init` failed at 11:46:05.348468 after 48.23 seconds
+[0m11:46:05.349944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111ca2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ea0830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b98170>]}
+[0m11:46:05.351033 [debug] [MainThread]: Flushing usage events
+[0m11:46:05.693245 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:01.307735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091543e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6dccb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6dc920>]}
+
+
+============================== 11:52:01.310931 | 9f11d2b1-8bb3-450e-bad2-50f37ad07b60 ==============================
+[0m11:52:01.310931 [info ] [MainThread]: Running with dbt=1.11.8
+[0m11:52:01.311261 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'write_json': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'debug': 'False', 'invocation_command': 'dbt init', 'no_print': 'None', 'quiet': 'False', 'fail_fast': 'False', 'log_format': 'default', 'warn_error': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/rk8896/.dbt', 'log_path': 'logs', 'log_cache_events': 'False', 'printer_width': '80'}
+[0m11:52:29.676586 [debug] [MainThread]: Starter project path: /Users/rk8896/Desktop/DBT_tutorial/Airbnb_Snowflake_DBT_Data_Engineering_Project/AWS_DBT_Snowflake/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m11:52:29.694715 [info ] [MainThread]: 
+Your new dbt project "aws_dbt_snowflake_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:52:29.695151 [info ] [MainThread]: Setting up your profile.
+[0m11:52:33.819828 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:52:33.821193 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:52:33.821457 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:58:43.325919 [info ] [MainThread]: Profile aws_dbt_snowflake_project written to /Users/rk8896/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:58:43.351405 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 402.08698, "process_in_blocks": "0", "process_kernel_time": 0.420083, "process_mem_max_rss": "112066560", "process_out_blocks": "0", "process_user_time": 1.340573}
+[0m11:58:43.356284 [debug] [MainThread]: Command `dbt init` succeeded at 11:58:43.356057 after 402.09 seconds
+[0m11:58:43.359428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5284d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a5a030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ade2660>]}
+[0m11:58:43.360415 [debug] [MainThread]: Flushing usage events
+[0m11:58:43.705492 [debug] [MainThread]: An error was encountered while trying to flush usage events
